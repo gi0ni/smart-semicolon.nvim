@@ -35,7 +35,7 @@ function smart_semicolon(char)
     word = get_word()
     line = get_line()
 
-    if has_valid_ending(word) then
+    if has_valid_ending(word) and string.match(line, "	for") == nil then
         last_char = char
     else
         last_char = nil
