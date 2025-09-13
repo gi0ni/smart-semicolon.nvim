@@ -1,6 +1,6 @@
 local last_char = nil
 local last_ending = nil
-local valid_endings = { "')", '")', "'", '"', ")", "]", "}", ")}", "]}", "')}", '")}', '("")', "('')" }
+local valid_endings = { "')", '")', "'", ")", "]", "}", ")}", "]}", "')}", '")}', '("")', "('')" }
 
 local function get_word()
 	return vim.fn.expand("<cword>")
