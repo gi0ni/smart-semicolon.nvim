@@ -34,7 +34,7 @@ local function smart_semicolon(char)
 	word = get_word()
 	line = get_line()
 
-	if line:find("for") == nil and has_valid_ending(word) then
+	if line:gsub("%s+", ""):find("^for") == nil and has_valid_ending(word) then
 		last_char = char
 	else
 		last_char = nil
